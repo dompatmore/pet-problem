@@ -4,7 +4,7 @@
 
 1. First, ensure you have the postgres client installed on your machine. You can confirm this by typing `brew install postgresql` 
 
-2. Create a Postgres data source in Heroku. Using either [https://eggerapps.at/postico/](Postico) or [https://www.pgadmin.org/](PGAdmin),ensure you can connect to your database server
+2. Create a Postgres data source in Heroku. Using either  [Postico](https://eggerapps.at/postico/) or [PGAdmin](https://www.pgadmin.org/),ensure you can connect to your database server
 
 3. Using the list of pets in the google doc, create a pets table. How many columns do you need, and what field types should they be?
 
@@ -23,6 +23,6 @@ Create another table called owners and add their names there. Change the pets ta
 
 - You may wonder why you see a number rather than a name-it's because we've moved that information into a separate table and are referencing it using the id. We can access it by using a `join` statement. See if you can use this so that you can return the name of the owner, not just the id.
 
-- At this point you might find it challenging to move between SQL and Ruby. One of the features of rails is its ActiveRecord, which makes it easier to think more about objects than SQL statements. Similar frameworks are [https://sequel.jeremyevans.net/](Sequel) and [https://rom-rb.org/learn/core/5.2/quick-setup/](Ruby Object Mapper). Try using either and see if it is easier to retrieve the data you want to display. *If successful*, there's still some duplication in the pets table-create another table, and ensure your endpoint of listing all the pets and their owner work.
+- At this point you might find it challenging to move between SQL and Ruby. One of the features of rails is its ActiveRecord, which makes it easier to think more about objects than SQL statements. Similar frameworks are [Sequel](https://sequel.jeremyevans.net/) and [Ruby Object Mapper](https://rom-rb.org/learn/core/5.2/quick-setup/). Try using either and see if it is easier to retrieve the data you want to display. *If successful*, there's still some duplication in the pets table-create another table, and ensure your endpoint of listing all the pets and their owner work.
 
 - Instead of manually entering pets into the table, create an endpoint that allows you to pass in that information.
